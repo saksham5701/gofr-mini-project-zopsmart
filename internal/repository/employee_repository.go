@@ -28,7 +28,7 @@ func (r *EmployeeRepository) GetEmployees(ctx *gofr.Context) ([]models.Employee,
 	var employees []models.Employee
 	for rows.Next() {
 		var employee models.Employee
-		if err := rows.Scan(&employee.Empname, &employee.Salary, &employee.Email); err != nil {
+		if err := rows.Scan(&employee.Eid,&employee.Empname, &employee.Salary, &employee.Email); err != nil {
 			return nil, err
 		}
 		employees = append(employees, employee)

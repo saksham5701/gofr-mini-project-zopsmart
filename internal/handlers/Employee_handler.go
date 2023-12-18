@@ -41,7 +41,7 @@ func (h *EmployeeHandler) AddEmployeeHandler(c *gofr.Context) (interface{}, erro
 
 
 func (h *EmployeeHandler) UpdateEmployeeHandler(c *gofr.Context) (interface{}, error) {
-	employeeID, err := strconv.Atoi(c.PathParam("id"))
+	employeeID, err := strconv.Atoi(c.PathParam("eid"))
 	if err != nil {
 		return nil, &errors.Response{StatusCode: http.StatusBadRequest, Code: "BAD_REQUEST", Reason: "Invalid project ID"}
 	}
