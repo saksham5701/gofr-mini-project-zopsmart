@@ -19,7 +19,9 @@ This an API project that helps you with Management of your employees records.It 
 ## Connection to MYSQL Database
 
 ```bash
-  docker run --name employee-project-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=employee_db -p 3306:3306 -d mysql:8.0.30
+  docker run --name gofr-mysql -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=employees_db -p 3306:3306 -d mysql:8.0.30
+
+  docker exec -it gofr-mysql mysql -uroot -proot123 employees_db -e "CREATE TABLE employees (eid int(255) PRIMARY KEY, empname VARCHAR(255) NOT NULL,salary int(50),email VARCHAR(255));"
 ```
     
     
