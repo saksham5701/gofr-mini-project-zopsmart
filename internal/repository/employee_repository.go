@@ -3,8 +3,7 @@ package repository
 import (
 	"database/sql"
 	"employee_manager/internal/models"
-
-	"gofr.dev/pkg/gofr"
+     "gofr.dev/pkg/gofr"
 )
 
 
