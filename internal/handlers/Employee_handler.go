@@ -51,7 +51,7 @@ func (h *EmployeeHandler) UpdateEmployeeHandler(c *gofr.Context) (interface{}, e
 		return nil, &errors.Response{StatusCode: http.StatusBadRequest, Code: "BAD_REQUEST", Reason: "Invalid request payload"}
 	}
 
-	updatedEmployee.Empname = Empname
+	updatedEmployee.Eid = employeeID;
 
 	if err := h.Service.UpdateEmployee(c, updatedEmployee); err != nil {
 		return nil, &errors.Response{StatusCode: http.StatusInternalServerError, Code: "INTERNAL_SERVER_ERROR", Reason: "Internal Server Error"}
