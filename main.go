@@ -15,7 +15,7 @@ import (
 
 func main() {
 
-	db, err := sql.Open("mysql", "root:root123@tcp(localhost:3306)/employees")
+	db, err := sql.Open("mysql", "root:root123@tcp(localhost:3306)/employees_db")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -31,11 +31,11 @@ func main() {
 	EmployeeHandler := &handlers.EmployeeHandler{Service: EmployeeService}
 
 	app := gofr.New()
-
-	app.GET("/employees", EmployeeHandler.GetEmployeesHandler)
+    app.GET("/employees", EmployeeHandler.GetEmployeesHandler)
 	app.POST("/employee", EmployeeHandler.AddEmployeeHandler)
 	app.PUT("/employee/eid", EmployeeHandler.UpdateEmployeeHandler)
 	app.DELETE("/employee/eid", EmployeeHandler.DeleteEmployeeHandler)
 
 	app.Start()
 }
+
