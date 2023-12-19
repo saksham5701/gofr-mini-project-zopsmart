@@ -28,11 +28,10 @@ This an API project that helps you with Management of your employees records.It 
 ## Various API requests over Postman
 
 ### Get API
-
-![GET](https://github.com/saksham5701/gofr-mini-project-zopsmart/assets/95173447/61751c1d-654e-4680-ac45-8bb2cf8db40d)
+![GET](https://github.com/saksham5701/gofr-mini-project-zopsmart/assets/95173447/e386559c-afde-411b-adb5-6c771fbdad73)
 
 ### Post
-![POST](https://github.com/saksham5701/gofr-mini-project-zopsmart/assets/95173447/6fee6144-d336-47c9-8e7a-065bd0e5d028)
+![POST](https://github.com/saksham5701/gofr-mini-project-zopsmart/assets/95173447/908023a4-4545-4308-9bc1-21b2bad419c3)
 ### PUT
 ![PUT](https://github.com/saksham5701/gofr-mini-project-zopsmart/assets/95173447/272452b5-08b2-4522-b429-87f8c0a7f94b)
 ### DELETE
